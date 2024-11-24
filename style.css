@@ -1,0 +1,20 @@
+/* Board container */
+.container {
+    display: flex;
+    flex-wrap: wrap; /* Allows wrapping into rows */
+    width: 100%; /* Ensure it takes the desired width */
+    aspect-ratio: 1 / 1; /* Keeps the board square */
+    border: 2px solid black;
+  }
+  
+  /* Individual cells */
+  .container div {
+    flex: 1; /* Cells grow to fill available space */
+    flex-basis: calc(100% / 20); /* Set base size for 16 cells per row */
+    aspect-ratio: 1 / 1; /* Ensures the cells are square */
+    border: 1px solid #ddd; /* Optional: visual borders */
+    box-sizing: border-box; /* Ensure borders are included in the size */
+  }
+
+  
+  
